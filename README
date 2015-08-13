@@ -1,0 +1,31 @@
+<?php
+ include 'MyDB.php';
+ $config=array(
+	"host"=>"localhost",
+	"user"=>"root",
+	"password"=>"",
+	"database"=>"test"
+ );
+ //connection to database
+ $db=new DB($config);
+
+ //executing Query  and getting Result
+ $data=$db->query("SELECT  count(username)  as total from users_master "); 
+
+	//Insert data into table database
+	$db->insert("yourtablename",array(
+	"columnname"=>"data",
+	)); 
+	
+	//select Query
+	$data=$db->select("yourtablename","columname1,columname2");
+ 	
+	//update Query
+ 	$data=$db->update("yourtablename",array(
+	"columnname"=>"data"
+	),"id=3");
+	
+	
+	//getting all table records
+	$data=$db->get("yourtablename");
+	
