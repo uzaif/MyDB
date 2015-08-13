@@ -1,11 +1,12 @@
-<?php
+
  include 'MyDB.php';
  $config=array(
-	"host"=>"localhost",
-	"user"=>"root",
-	"password"=>"",
-	"database"=>"test"
+	"host"=>"Your host name",//localhost 
+	"user"=>"username",//root
+	"password"=>"",//password
+	"database"=>"your database name"//database name
  );
+ 
  //connection to database
  $db=new DB($config);
 
