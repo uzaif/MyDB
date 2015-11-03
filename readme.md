@@ -23,6 +23,10 @@ $db=new DB($config);
 ```
 ### Executing SQL Raw Query and Getting Rusult in  Array Form
 
+#### Return Type
+`array`
+Which Contain Retrive Data in associative array format 
+
 ```php
 $data = $db->query(
  			"SELECT  count(username)  as total 
@@ -32,6 +36,12 @@ $data = $db->query(
 
  
 ### Insert Data in Table 
+#### Parameters
+1 `string` 
+for Table name
+	 
+2 `array`
+associative array for insert Data	
 
 ```php
 $db->insert("users_master",
@@ -41,12 +51,20 @@ $db->insert("users_master",
 ```
 ### Update Data in Table
 #### Parameters
-	 1 .Type: `string` for Table name
-	 2 .Type: `array`  for Actual Data for Update	
-	 3 .Type: `string` where clause of sql Update	
+1 `string` 
+for Table name
+	 
+2 `array`
+for Actual Data for Update	
+	 
+3 `string`
+where clause of sql Update	
+
+
 	
 ```php
-$data=$db->update("users_master",
+$db->update("users_master",
 				  array(
 				  "password"=>"somepassword"),
 				  "username='uzaif'");
+```
