@@ -1,37 +1,69 @@
-DataBase Util Class For Php With MySqli
-===========================
+# MyDb Database Util class for php
 
+> Easy Way To Access and Database and Perform Database Operations
 
-* For Makeing  Database Connection
-========================================================
-	include 'MyDB.php';
-	$config=array(
-	"host"=>"Your host name",//localhost 
-	"user"=>"username",//root
-	"password"=>"",//password
-	"database"=>"your database name"//database name
-	);
-	$db=new DB($config);
-	
-=========================================================
+-
 
- //executing Query  and getting Result
- $data=$db->query("SELECT  count(username)  as total from users_master "); 
+## First Include  MyDb.php in Your Php Script
 
-	//Insert data into table database
-	$db->insert("yourtablename",array(
-	"columnname"=>"data",
-	)); 
-	
-	//select Query
-	$data=$db->select("yourtablename","columname1,columname2");
- 	
-	//update Query
- 	$data=$db->update("yourtablename",array(
-	"columnname"=>"data"
-	),"id=3");
-	
-	
-	//getting all table records
-	$data=$db->get("yourtablename");
+```php
+include 'MyDB.php';
 ```
+
+### Making Database Connection
+
+```php
+$config=array(
+"host"=>"Your host name",//localhost 
+"user"=>"username",//root
+"password"=>"",//password
+"database"=>"your database name"//database name
+);
+$db=new DB($config);
+```
+### Executing SQL Raw Query and Getting Rusult in  Array Form
+
+#### Return Type
+Type:`array`
+array Which Contain Retrive Data in associative array format 
+
+```php
+$data = $db->query(
+ 			"SELECT  count(username)  as total 
+			from
+			users_master ");
+```
+
+ 
+### Insert Data in Table 
+#### Parameters
+1 Type: `string` 
+for Table name
+	 
+2 Type: `array`
+associative array for insert Data	
+
+```php
+$db->insert("users_master",
+			array(
+			"username"=>"uzaif",
+			"password"=>"password")); 
+```
+### Update Data in Table
+#### Parameters
+1 Type: `string` 
+for Table name
+	 
+2 Type: `array`
+for Actual Data for Update	
+	 
+3 Type: `string`
+where clause of sql Update	
+
+
+	
+```php
+$db->update("users_master",
+				  array(
+				  "password"=>"somepassword"),
+				  "username='uzaif'");
