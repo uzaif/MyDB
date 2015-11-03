@@ -19,7 +19,7 @@ $config=array(
 "password"=>"",//password
 "database"=>"your database name"//database name
 );
-$db=new DB($config);
+$db=new MyDb($config);
 ```
 ### Executing SQL Raw Query and Getting Rusult in  Array Form
 
@@ -74,6 +74,7 @@ $db->update("users_master",
 
 #### Parameters
 1 `string` for Table Name
+
 2 `string` for Where Clause of Sql
 
 ```php
