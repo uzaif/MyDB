@@ -6,7 +6,7 @@
 
 
 
-## Makeing Database Connection
+## Making Database Connection
 
 ```php
 <?php
@@ -19,4 +19,14 @@ $config=array(
 );
 $db=new DB($config);
 ```
+## Executing SQL Raw Query and Getting Rusult in  Array Form
+
+```php
+<?php
+	$data = $db->query(
+			"SELECT  count(username)  as total 
+			from
+			users_master ");
+```
+
 
