@@ -4,7 +4,7 @@
  * MyDB Class
  *
  * @category  Database Utility class
- * @author    Uzaif Nilger <jcampbell@ajillion.com>
+ * @author    Uzaif Nilger 
  * @copyright Copyright (c) 2015
  * @license   http://opensource.org/licenses/gpl-3.0.html GNU Public License
  * @version   1.0
@@ -96,8 +96,7 @@ class MyDB extends MySQLi
     public function update($table,$data,$where)
     {
         $extracted = $this -> append($data);
-       // $sql="UPDATE ".$table." SET ".$extracted." WHERE ".$where;
-		$this -> query("UPDATE ".$table." SET ".$extracted." WHERE ".$where);
+    	$this -> query("UPDATE ".$table." SET ".$extracted." WHERE ".$where);
 		
 		if($this -> error)
             return $this -> error;
