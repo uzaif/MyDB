@@ -4,13 +4,15 @@
 
 -
 
-
-
-## Making Database Connection
+## First Include This MyDb.php in Your Php Script
 
 ```php
-<?php
 include 'MyDB.php';
+```
+
+### Making Database Connection
+
+```php
 $config=array(
 "host"=>"Your host name",//localhost 
 "user"=>"username",//root
@@ -19,17 +21,17 @@ $config=array(
 );
 $db=new DB($config);
 ```
-## Executing SQL Raw Query and Getting Rusult in  Array Form
+### Executing SQL Raw Query and Getting Rusult in  Array Form
 
 ```php
-<?php
+
 	$data = $db->query(
 			"SELECT  count(username)  as total 
 			from
 			users_master ");
 ```
 
-# Insert Data in Specefic Table 
+### Insert Data in Specefic Table 
 
 ```php
 	$db->insert("users_master",
