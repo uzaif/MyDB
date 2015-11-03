@@ -25,7 +25,7 @@ $db=new DB($config);
 
 #### Return Type
 `array`
-Which Contain Retrive Data in associative array format 
+Which Contain Retrive Record in associative array format 
 
 ```php
 $data = $db->query(
@@ -35,14 +35,15 @@ $data = $db->query(
 ```
 
  
-### Insert Data in Table 
+### Insert Record in Table 
+
 #### Parameters
 
 1 `string` 
 for Table name
 	 
 2 `array`
-associative array for insert Data	
+associative array for insert Record	
 
 ```php
 $db->insert("users_master",
@@ -50,16 +51,16 @@ $db->insert("users_master",
 			"username"=>"uzaif",
 			"password"=>"password")); 
 ```
-### Update Data in Table
+### Update Record in Table
 #### Parameters
 1 `string` 
 for Table name
 	 
 2 `array`
-for Actual Data for Update	
+for Actual Record for Update	
 	 
 3 `string`
-where clause of sql Update	
+where clause of sql	
 
 	
 ```php
@@ -67,4 +68,14 @@ $db->update("users_master",
 				  array(
 				  "password"=>"somepassword"),
 				  "username='uzaif'");
+```
+
+### Delete Record from Table
+
+#### Parameters
+1 `string` for Table Name
+2 `string` for Where Clause of Sql
+
+```php
+$db->delete("users_master","username='uzaif'");
 ```
