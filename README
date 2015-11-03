@@ -4,8 +4,8 @@ DataBase Util Class For Php With MySqli
 
 * For Makeing  Database Connection
 
-```
-	include 'MyDB.php';
+	 ```
+ 	 include 'MyDB.php';
 	 $config=array(
 			"host"=>"Your host name",//localhost 
 			"user"=>"username",//root
@@ -14,8 +14,7 @@ DataBase Util Class For Php With MySqli
 			 );
  	
  	 $db=new DB($config);
-
-```
+ 	 ```
 
 
 
