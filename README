@@ -1,5 +1,4 @@
-
- include 'MyDB.php';
+``` include 'MyDB.php';
  $config=array(
 	"host"=>"Your host name",//localhost 
 	"user"=>"username",//root
@@ -29,4 +28,4 @@
 	
 	//getting all table records
 	$data=$db->get("yourtablename");
-	
+	```
