@@ -47,10 +47,10 @@ for Table name
 	 
 2 `array`
 =======
-1 Type: `string` 
+1 `string` 
 for Table name
 	 
-2 Type: `array`
+2 `array`
 associative array for insert Data	
 
 ```php
@@ -70,13 +70,13 @@ for Actual Data for Update
 	 
 3 `string`
 =======
-1 Type: `string` 
+1 `string` 
 for Table name
 	 
-2 Type: `array`
+2 `array`
 for Actual Data for Update	
 	 
-3 Type: `string`
+3 `string`
 where clause of sql Update	
 
 	
