@@ -1,13 +1,23 @@
-``` include 'MyDB.php';
- $config=array(
-	"host"=>"Your host name",//localhost 
-	"user"=>"username",//root
-	"password"=>"",//password
-	"database"=>"your database name"//database name
- );
- 
- //connection to database
- $db=new DB($config);
+DataBase Util Class For Php With MySqli
+===========================
+
+
+* For Makeing  Database Connection
+
+```
+	include 'MyDB.php';
+	 $config=array(
+			"host"=>"Your host name",//localhost 
+			"user"=>"username",//root
+			"password"=>"",//password
+			"database"=>"your database name"//database name
+			 );
+ 	
+ 	 $db=new DB($config);
+
+```
+
+
 
  //executing Query  and getting Result
  $data=$db->query("SELECT  count(username)  as total from users_master "); 
@@ -28,4 +38,4 @@
 	
 	//getting all table records
 	$data=$db->get("yourtablename");
-	```
+```
