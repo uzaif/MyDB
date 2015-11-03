@@ -24,8 +24,12 @@ $db=new DB($config);
 ### Executing SQL Raw Query and Getting Rusult in  Array Form
 
 #### Return Type
+<<<<<<< HEAD
 `array`
 Which Contain Retrive Data in associative array format 
+=======
+Type:`array`
+array Which Contain Retrive Data in associative array format 
 
 ```php
 $data = $db->query(
@@ -37,10 +41,16 @@ $data = $db->query(
  
 ### Insert Data in Table 
 #### Parameters
+<<<<<<< HEAD
 1 `string` 
 for Table name
 	 
 2 `array`
+=======
+1 Type: `string` 
+for Table name
+	 
+2 Type: `array`
 associative array for insert Data	
 
 ```php
@@ -51,6 +61,7 @@ $db->insert("users_master",
 ```
 ### Update Data in Table
 #### Parameters
+<<<<<<< HEAD
 1 `string` 
 for Table name
 	 
@@ -58,8 +69,15 @@ for Table name
 for Actual Data for Update	
 	 
 3 `string`
+=======
+1 Type: `string` 
+for Table name
+	 
+2 Type: `array`
+for Actual Data for Update	
+	 
+3 Type: `string`
 where clause of sql Update	
-
 
 	
 ```php
