@@ -6,15 +6,13 @@ DataBase Util Class For Php With MySqli
 
 ```php
 include 'MyDB.php';
-
 $config=array(
-			"host"=>"Your host name",//localhost 
-			"user"=>"username",//root
-			"password"=>"",//password
-			"database"=>"your database name"//database name
-			 );
- 	
- 	 $db=new DB($config);
+"host"=>"Your host name",//localhost 
+"user"=>"username",//root
+"password"=>"",//password
+"database"=>"your database name"//database name
+);
+$db=new DB($config);
 ```
 
 
