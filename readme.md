@@ -29,4 +29,12 @@ $db=new DB($config);
 			users_master ");
 ```
 
+# Insert Data in Specefic Table 
+
+```php
+	$db->insert("users_master",
+				array(
+				"username"=>"uzaif",
+				"password"=>"password")); 
+```
 
