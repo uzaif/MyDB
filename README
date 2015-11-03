@@ -4,10 +4,10 @@ DataBase Util Class For Php With MySqli
 
 * For Makeing  Database Connection
 
-	 ```php
-	 include 'MyDB.php';
+```php
+include 'MyDB.php';
 
-	 $config=array(
+$config=array(
 			"host"=>"Your host name",//localhost 
 			"user"=>"username",//root
 			"password"=>"",//password
@@ -15,7 +15,7 @@ DataBase Util Class For Php With MySqli
 			 );
  	
  	 $db=new DB($config);
-	 ```
+```
 
 
  //executing Query  and getting Result
