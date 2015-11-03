@@ -41,9 +41,14 @@ $db->insert("users_master",
 ```
 ### Update Data in Table
 #### Parameters
-	 1 .Type: `string` for Table name
-	 2 .Type: `array`  for Actual Data for Update	
-	 3 .Type: `string` where clause of sql Update	
+	 1 .Type: `string` 
+	 for Table name
+	 
+	 2 .Type: `array`
+	 for Actual Data for Update	
+	 
+	 3 .Type: `string`
+	 where clause of sql Update	
 	
 ```php
 $data=$db->update("users_master",
