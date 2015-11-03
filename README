@@ -5,6 +5,7 @@ DataBase Util Class For Php With MySqli
 * For Makeing  Database Connection
 
 ```php
+<?php
 include 'MyDB.php';
 $config=array(
 "host"=>"Your host name",//localhost 
